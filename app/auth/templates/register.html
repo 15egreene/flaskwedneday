@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+<form class="p-3" method="POST" style="text-align:center;">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset>
+           <h1>Register Here</h1>
+           <br>
+            {{ form.email(class='form-control', placeholder='Email...') }}
+        </fieldset>
+    </div>
+    <br>
+    <div class="form-group">
+        <fieldset>
+            
+            {{ form.username(class='form-control', placeholder='Username...') }}
+        </fieldset>
+    </div>
+    <br>
+    <div class="form-group">
+        <fieldset>
+           
+            {{ form.first_name(class='form-control', placeholder='First Name...') }}
+        </fieldset>
+    </div>
+    <br>
+    <div class="form-group">
+        <fieldset>
+           
+            {{ form.last_name(class='form-control', placeholder='Last Name...') }}
+        </fieldset>
+    </div>
+    <br>
+    <div class="form-group">
+        <fieldset>
+         
+            {{ form.password(class='form-control', placeholder='Password...') }}
+        </fieldset>
+    </div>
+    <br>
+    <div class="form-group">
+        <fieldset>
+          
+            {{ form.confirm_password(class='form-control', placeholder='Confirm Password...') }}
+        </fieldset>
+    </div>
+    <br>
+    {{ form.submit(class='btn btn-block btn-info') }}
+</form>
+{% endblock content %}

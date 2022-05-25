@@ -1,0 +1,3 @@
+startenv
+.env
+__pycache__
