@@ -1,3 +1,6 @@
+
+# our auth blueprint is designed to be a subsection with a specific role within our larger flask app
+# we need to connect it to our larger flask app, otherwise we wont have access to it
 from flask import Blueprint, render_template, request, redirect, flash, url_for
 from app.models import User, db
 from werkzeug.security import check_password_hash

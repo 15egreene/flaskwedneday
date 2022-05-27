@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/../auth_static/auth.css">
 </head>
   <body>
-    <div class="container">
+    <div class="container" style="justify-content: center;">
+        <div id="logorow" class="row justify-content:center;">
             <a href="{{url_for('home')}}">
-                <img  class='img-fluid' style="justify-content:center;" src ="/../auth/auth_static/images/black.jpeg"
-                    alt='SigninPic' />
+            <img  class='img-fluid' style="justify-content:center;" src ="/../auth/auth_static/images/black.jpeg"
+                alt='SigninPic' />
             </a>
-        </div>
+        </div>  
         <div class="row justify-content-center">
             {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
